@@ -1,99 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty Care Product</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Origin Six</title>
 
-    section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-      color: #fff;
-    }
-
-    #intro {
-      background-color: #e44d26;
-    }
-
-    #features {
-      background-color: #333;
-    }
-
-    #contact {
-      background-color: #4CAF50;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #fff;
-      color: #333;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .cta-button:hover {
-      background-color: #333;
-      color: #fff;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+    <header id="header">
+        <nav class="container">
+            <a class="logo" href="#">BEAUTY<span>PRODUCT</span>.</a>
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#home">Beginning</a></li>
+                    <li><a class="title" href="#about">Envelope</a></li>
+                    <li><a class="title" href="#services">Serviçes</a></li>
+                    <li><a class="title" href="#testimonials">testimonials</a></li>
+                    <li><a class="title" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+    </header>
+    <main>
+        <!--HOME-->
+        <section class="section" id="home">
+            <div class="container grid">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cabeleireira penteando cliente mulher" />
+                </div>
+                <div class="text">
+                    <h2 class="title">Natural health for your hair</h2>
+                    <p>
+                        An exclusive salon in haryana, specializing in natural treatments.
+                    </p>
+                    <a class="button" href="#">Schedule an appointment</a>
+                </div>
+            </div>
+        </section>
+        <div class="divider-1"></div>
+        <!--ABOUT-->
+        <section class="section" id="about">
+            <div class="container grid">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="três cabeleireiras sorrindo" />
+                </div>
+                <div class="text">
+                    <h2 class="title">About Us</h2>
+                    <p>
+                        If the customer is very smart, he or she will be able to achieve the desired result. He therefore hinders him and flees from pleasure, and therefore hates less pleasures than these, and therefore, to be assumed and the like. It is held as in nor from its source.
+                    </p>
+                    <br />
+                    <p>
+                        The company itself is a very successful company. Because to the fact that there is nothing that they can achieve, he will criticize any fault of the free architect, they do not know him with pleasure. Why do all the services often at any time?
+                    </p>
+                    <br />
+                    <p>
+                        The company itself is a very successful company. Those who are most deserving of being softened and with pain, those who have been said, and who are not to be chosen except. I will explain the very result of the practice of the accusers to never do them.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <section id="intro">
-    <h1>Welcome to Our Beauty Care Product</h1>
-    <p>Discover the secret to radiant and healthy skin.</p>
-    <a class="cta-button" href="#features">Learn More</a>
-  </section>
+        <div class="divider-2"></div>
+        
 
-  <section id="features">
-    <h1>Key Features</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo at ligula fermentum convallis vel nec nulla.</p>
-    <p>Nullam fringilla metus eu tortor efficitur, et ullamcorper quam hendrerit. Sed vitae neque nec arcu dignissim vulputate. Duis ullamcorper risus vel sagittis fermentum.</p>
-    <a class="cta-button" href="#contact">Contact Us</a>
-  </section>
+        <section class="section" id="services">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Serviçes</h2>
+                    <p class="subtitles">
+                        With more than 10 years on the market, <strong>Beautysalon</strong> has already won over customers from countless countries with its exclusive and totally natural treatments
+                    </p>
+                </header>
+                <div class="cards grid">
+                    <div class="card">
+                        
+                        <i class="icon-woman-hair"></i>
+                        <h3 class="title">Hair therapy</h3>
+                        <p>
+                            The company itself is a very successful company. For we who are most worthy of the truth and accuse them forsaking it, fall into training or forgiveness with it
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-trim"></i>
+                        <h3 class="title">Cortes</h3>
+                        <p>
+                            The company itself is a very successful company. For we who are most worthy of the truth and accuse them forsaking it, fall into training or forgiveness with it
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-cosmetic"></i>
+                        <h3 class="title">Treatments</h3>
+                        <p>
+                            The company itself is a very successful company. For we who are most worthy of the truth and accuse them forsaking it, fall into training or forgiveness with it
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider-1"></div>
+        
+        <section class="section" id="testimonials">
+            
+            <div class="container">
+                <header>
+                    <h2 class="title">Testimonials from those who have already been here</h2>
+                </header>
+                <div class="testimonials swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    The company itself is a very successful company. The pain and the like are held by the labor of life, and here there is no way to hate these in the pains of the corrupt
+                                 
+                                </p>
+                                <cite>
+                    <img
+                      src="assets/photos/wanessa.jpeg"
+                      alt="photo by aksad"
+                    />
+                    aksad
+                  </cite>
+                            </blockquote>
+                        </div>
 
-  <section id="contact">
-    <h1>Contact Us</h1>
-    <p>Have questions or want to learn more? Reach out to us!</p>
-    <a class="cta-button" href="mailto:info@beautycare.com">Email Us</a>
-  </section>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span> The company itself is a very successful company. The pain and the like are held by the labor of life, and here there is no way to hate these in the pains of the corrupt
+                                </p>
+                                <cite>
+                    <img
+                      src="assets/photos/franciele.jpeg"
+                      alt="Foto de Wanessa Souza"
+                    />
+                    
+                  </cite>
+                            </blockquote>
+                        </div>
 
-  <footer>
-    &copy; 2023 Beauty Care Product. All rights reserved.
-  </footer>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span> The company itself is a very successful company. The pain and the like are held by the labor of life, and here there is no way to hate these in the pains of the corrupt
+                                </p>
+                                <cite>
+                    <img
+                      src="assets/photos/valeska.jpeg"
+                      alt="Foto de Valeska"
+                    />
+                
+                  </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div style="position: relative" class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <div class="divider-2"></div>
+        <!--CONTACT-->
+        <section class="section" id="contact">
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title">Contact us!</h2>
+                    <p>
+                        Get in touch with Beautysalon, we want to answer your questions, hear your criticisms and suggestions.
+                    </p>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=+91 9168313915&text=Oi! I would like to schedule an appointment." class="button" target="_blank">
+                        <i class="icon-whatsapp"></i>Get in touch</a>
+                </div>
 
+                <div class="links">
+                    <ul class="grid">
+                        <li><i class="icon-phone"></i>+91 8168313915</li>
+                        <li><i class="icon-map-pin"></i>A.aksad 850</li>
+                        <li><i class="icon-mail"></i>contato@beautyproduct.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="divider-1"></div>
+        
+    </main>
+    
+    <footer class="section">
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#home">BEAUTY<span>PRODUCT</span>.</a>
+                <p>©2021 Beautyproduct.</p>
+                <p>All rights reserved.</p>
+            </div>
+            <div class="social">
+                <a href="https://instagram.com" target="_blank"><i class="icon-instagram"></i
+          ></a>
+                <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i
+          ></a>
+                <a href="https://youtueb.com" target="_blank"><i class="icon-youtube"></i
+          ></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--MAIN.JS-->
+    <script src="main.js"></script>
 </body>
+
 </html>
